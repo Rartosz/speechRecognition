@@ -4,6 +4,9 @@
     padding:0;
 
 }
+body{
+    background: #e5e1de;
+}
 
 #container 
 {
@@ -27,12 +30,13 @@
     box-shadow:  6px 6px 12px #a09e9b, 
                  -6px -6px 12px #ffffff;
              width:80vw;
-             height:80vh;
+             height:fit-content;
              position: relative;
              display:flex;
              flex-direction: column;
              align-items: center;
              justify-content: flex-start;
+             padding:15px 0px;
 }
 
 .menu
@@ -134,7 +138,7 @@
 {
     position:absolute;
     width:80%;
-    height:190px;
+    height:30vh;
     border-radius: 50px;
     background: #e5e1de;
     box-shadow:  6px 6px 12px #a09e9b, 
@@ -147,7 +151,7 @@
     justify-content: center;
     overflow: auto;
     margin-left:0%;
-    margin-top:300px;
+    margin-top:30%;
 }
 
 .listOpen
@@ -223,10 +227,11 @@
 .google-logo
 {
     width:200px;
-    height:80px;
+    min-height: 40px;
+    height:100px;
     position: relative;
     background-position:center;
-    background-size:100%;
+    background-size:80%;
     background-repeat: no-repeat;
     margin-top:45px;
     background-image:url('img/google.png');
@@ -401,8 +406,8 @@ box-shadow:  6px 6px 12px #a09e9b,
 
 .listening 
 {
-    width:80vw;
-    height:400px;
+    width:70vw;
+    height:60vh;
     background-color:#e5e1de;
     border-radius:13px;
     display:flex;
