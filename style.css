@@ -1,0 +1,461 @@
+*
+{
+    margin:0;
+    padding:0;
+
+}
+
+#container 
+{
+    width:100vw;
+    height:100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: #e5e1de;
+    z-index:1;
+    
+}
+
+.google
+{
+    border-radius: 50px;
+    background: #e5e1de;
+    box-shadow:  6px 6px 12px #a09e9b, 
+                 -6px -6px 12px #ffffff;
+             width:840px;
+             height:500px;
+             position: relative;
+             display:flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: flex-start;
+}
+
+.menu
+{
+    width:100%;
+    height:40px;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:30px;
+    border-radius:50px;
+}
+
+
+.icon
+{
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color:#ced6d3;
+    margin:0px 10px;
+    background-position:center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s;
+    
+}
+
+.icon:hover 
+{
+    opacity:0.6;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.mail 
+{
+    background-image:url('img/mail.png');
+    background-size:60%;
+}
+
+.hamburger-menu
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.hamburger 
+{
+    width: 18px;
+    content:" ";
+    height:3px;
+    position:absolute;
+    background:rgb(44, 43, 43);
+    transition:0.5s;
+}
+
+.first 
+{
+    transform:translateY(-7px);
+}
+.firstClicked
+{
+    transform:rotate(45deg);
+    transition:0.6s;
+}
+.second 
+{
+    transform:translateY(0px);
+}
+
+.secondClicked
+{
+    opacity:0;
+    transition:0.4s;
+
+}
+
+.third 
+{
+
+    transform:translateY(7px);
+    
+}
+
+.thirdClicked 
+{
+    transform:rotate(135deg);
+    transition:0.6s;
+}
+
+.list 
+{
+    position:absolute;
+    width:150px;
+    height:250px;
+    border-radius: 50px;
+    background: #e5e1de;
+    box-shadow:  6px 6px 12px #a09e9b, 
+                 -6px -6px 12px #ffffff;
+    display:none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin-left:75%;
+    margin-top:100px;
+}
+
+.listOpen
+{
+    display:flex;
+
+}
+
+.option 
+{
+    width: 45px;
+    height:45px;
+    border-radius:100%;
+    margin:0px 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-color:#ced6d3;
+    transition: opacity 0.4s;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.option:hover 
+{
+    opacity:0.6;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.gmail 
+{
+    background-image:url('img/gm.png');
+    background-size:70%;
+}
+.maps
+{
+    background-image:url('img/map.png');
+    background-size:50%;
+}
+.translator
+{
+    background-image:url('img/translator.png');
+    background-size:100%;
+}
+
+.yt 
+{
+    background-image:url('img/yt.png');
+    background-size:70%;
+}
+.gsv
+{
+    background-image:url('img/gsv.png');
+    background-size:70%;
+}
+.gp
+{
+    background-image:url('img/gp.png');
+    background-size:70%;
+}
+
+
+.profile
+{
+    background-image:url('img/profile.png');
+    margin-right:50px;
+}
+
+.google-logo
+{
+    width:300px;
+    height:100px;
+    position: relative;
+    background-position:center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin-top:45px;
+    background-image:url('img/google.png');
+}
+
+.search
+{
+    width:400px;
+    height:54px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+    border-radius: 50px;
+background: #e5e1de;
+box-shadow:  6px 6px 12px #a09e9b, 
+             -6px -6px 12px #ffffff;
+}
+
+.gLogo 
+{
+    width:35px;
+    height:35px;
+    background-image:url('img/g-logo.png');
+    background-size:90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:8px;
+    transition: opacity 0.4s;
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.gLogoSearch
+{
+    background-image:url('img/search.png');
+    background-size:100%;
+}
+.gLogo:hover
+{
+    opacity:0.6;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.search-input
+{
+    width:60%;
+    height:35px;
+    background:transparent;
+    padding:0px 10px;
+    font-size:17px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color:rgb(68, 67, 67);
+    border:none;
+}
+
+.search-input:focus, .search-input:active
+{
+    outline:none;
+    border:none;
+    
+}
+
+
+.micro
+{
+    width:35px;
+    height:35px;
+    background-image:url('img/micro.png');
+    background-size:60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0px 10px;
+    transition: opacity 0.4s;
+}
+
+.micro:hover 
+{
+    opacity:0.6;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.icons 
+{
+    width:100%;
+    height:45px;
+    display:flex;
+    position:relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.iconBottom
+{
+    width:45px;
+    height:45px;
+    border-radius: 100%;
+    background-color:#ced6d3;
+    margin:0px 18px;
+    background-position:center;
+    background-size:60%;
+    background-repeat: no-repeat;
+    transition: opacity 0.4s;
+}
+
+.iconBottom:hover 
+{
+     opacity:0.6;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.add 
+{
+    background-image:url('img/icons8-add-phone-60.png');
+    
+}
+
+.photo
+{
+    background-image:url('img/icons8-add-image-48.png');
+}
+
+.map 
+{
+    background-image:url('img/icons8-map-48\(1\).png');
+    background-size:47%;
+}
+
+.smile 
+{
+    background-image:url('img/icons8-happy-48.png');
+}
+
+
+.listening-container 
+{
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0, 0, 0, 0.438);
+    display:none;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position:absolute;
+    transition:opacity 0.5s;
+    z-index:2;
+}
+
+.listening-containerOpen
+{
+    animation:open 0.5s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes open 
+{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.listening 
+{
+    width:400px;
+    height:250px;
+    background-color:#e5e1de;
+    border-radius:13px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    transform:translateY(100px);
+    
+}
+
+.gif 
+{
+    width:120px;
+    height:120px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:url('img/talking.gif');
+}
+
+
+.end 
+{
+    width:30px;
+    height:30px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:url('img/del.png');
+    transition:opacity 0.4s;
+}
+
+.end:hover 
+{
+    opacity:0.5;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.action
+{
+    width:100%;
+    font-size:19px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px 0px;
+    text-align: center;
+}
+
+.link 
+{
+    width:100%;
+    height:100%;
+    position: relative;
+    background:transparent;
+    outline: none;
+
+}
